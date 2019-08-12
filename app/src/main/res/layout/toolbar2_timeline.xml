@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:elevation="20dp">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/ivVectorHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vector_home"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="70dp"/>
+
+        <ImageView
+            android:id="@+id/ivSearchStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vector_search_stroke"
+            android:layout_marginRight="70dp"/>
+
+        <ImageView
+            android:id="@+id/ivNotificationStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vector_notifications_stroke"
+            android:layout_marginRight="70dp"/>
+
+        <ImageView
+            android:id="@+id/ivMessageStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_vector_messages_stroke"/>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

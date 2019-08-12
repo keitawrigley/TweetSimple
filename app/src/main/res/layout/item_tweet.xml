@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
+
+
+
+    <ImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:paddingTop="7.5dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:text="k3ita14"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/ivProfileImage"
+        android:layout_marginRight="10dp"
+        android:textColor="#000000"
+        android:paddingTop="7.5dp"/>
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Akeita14"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tvName"
+        android:layout_marginRight="10dp"
+        android:paddingTop="7.5dp"/>
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/ivProfileImage"
+        android:text="This is my tweet"
+        tools:text="This is my tweet"
+        android:textColor="#000000"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:layout_marginBottom="7dp"/>
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/tvScreenName"
+        tools:text="7m"
+        android:paddingTop="7.5dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/ivReTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vector_retweet_stroke"
+        android:layout_below="@id/ivTweetImage"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:layout_marginStart="@android:dimen/app_icon_size"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvReTweetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="161"
+        android:layout_below="@id/ivTweetImage"
+        android:layout_toRightOf="@id/ivReTweet"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_vector_heart_stroke"
+        android:layout_below="@id/ivTweetImage"
+        android:layout_toRightOf="@id/tvReTweetCount"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvFavoritesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivTweetImage"
+        tools:text="390"
+        android:layout_toRightOf="@id/ivHeart"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivTweetImage"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_below="@id/tvBody"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:layout_marginBottom="9dp"/>
+
+    <ImageView
+        android:id="@+id/ivStaring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:layout_below="@id/ivTweetImage"
+        android:layout_toRightOf="@id/tvFavoritesCount"
+        android:layout_marginRight="5dp"/>
+</RelativeLayout>
